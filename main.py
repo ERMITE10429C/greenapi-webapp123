@@ -116,4 +116,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    from dotenv import load_dotenv
+    load_dotenv()  # optional if using .env locally
+    
+    app.run(host="0.0.0.0", port=8000)
+
